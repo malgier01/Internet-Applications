@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>jQuery</title>
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+alert('Did you know that you can copy this text using Ctrl + C shortcut? ');
+});
+
+$(document).ready(function(){
+    $('td').one('click', edit).blur();
+    $('#edit').blur();
+});
+
+function edit() {
+    $("td").one('click', function(e){
+    let input = $("<input/>", {
+        value: $(e.target).text(),
+        type: "text",
+        id: "edit"
+        }).focus();
+        $(e.target).html(input);
+        $('button').trigger('asdf');
+               
+    });
+}
+$(function(){
+$('button').bind('asdf', function () { alert('The cake is a lie!'); });
+$('*').unbind();
+})
+</script>
+</head>
+<body>
+    <button> wakysdrty </button>
+    <table>
+        <tr><td>One</td></tr>
+        <tr><td>Two</td></tr>
+        <tr><td>Three</td></tr>
+        <tr><td>...</td></tr>
+        </table>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.date{
+    font-size: 42px;
+}
+
+/* .td1{
+    display:flex;
+    justify-content: space-evenly;
+}
+.td2{
+    display:flex;
+    justify-content: space-evenly;
+} */
+
+
+tr:nth-child(odd){
+    background-color: gray;
+}

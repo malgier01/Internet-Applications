@@ -1,0 +1,24 @@
+li { list-style-type: square }
+#price {
+    color: yellow;
+    font-weight: bold;}
+.fc {font-style: italic;}
+td > img {
+    border: 5px solid;
+    border-color: blue;
+}
+
+td > img:hover { 
+    border: 5px solid;
+    border-color: red;
+    border-color: yellow !important;
+}
+
+h1 + h2 {letter-spacing: 5px;}
+
+td[colspan = '2'] { font-size: small}
+
+p ~ p {color: gray;}
+
+    
+body {background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F02%2Ffb%2Ffb%2F02fbfb03fefd91ee0685109041ba56d5.jpg&f=1&nofb=1&ipt=04d6a7faa49419353a1f04345a59956d5100d2473e8c84dbd1770403aa6ad196&ipo=images); background-repeat: repeat}

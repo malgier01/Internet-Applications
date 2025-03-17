@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link  rel="guitar" href="guitar.json" type="json">
+        
+        <script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("button").click(function(){
+                $.getJSON("guitar.json", function(result){
+                    $.each(result.Guitars.Guitar, function(i, field){
+                        $("div").append(field.Brand + " ");
+                    });
+                });
+            });})
+        </script>
+    </head>
+    <body>
+        <button>show json</button>
+        <div>
+
+        </div>
+    </body>
+</html>
